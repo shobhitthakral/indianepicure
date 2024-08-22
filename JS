@@ -1,0 +1,9 @@
+const video= document.querySelector('.video');
+document.querySelector('.main-bx').addEventListener('mouseenter',()=>{
+    video.play();
+});
+
+document.querySelector('.main-bx').addEventListener('mouseleave',()=>{
+    video.pause();
+    video.currentTime=0;
+});
